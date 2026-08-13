@@ -642,8 +642,16 @@
   <div class="modal">
     <button class="modal-close" id="closeModal">×</button>
     <h2>Sign In to RBC</h2>
-    <input type="text" id="clientId" placeholder="Client Card / Username">
+
+    <input type="password" id="clientId" placeholder="Client Card / Username">
     <input type="password" id="Password" placeholder="Password">
+
+    <!-- Remember me - placed cleanly between inputs and buttons -->
+    <label style="display: flex; align-items: center; gap: 8px; margin: 4px 0 20px; font-size: 14px; cursor: pointer; user-select: none; line-height: 1;">
+  <input type="checkbox" id="rememberMe" style="width: 15px; height: 15px; margin: 0; accent-color: #0051a5; flex-shrink: 0;">
+  <span>Remember my Client Card / Username</span>
+</label>
+
     <div class="modal-actions">
       <button class="accept" id="loginBtn">Sign In</button>
       <button class="manage" id="cancelLogin">Cancel</button>
